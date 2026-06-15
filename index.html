@@ -195,7 +195,11 @@
   ];
   const $ = id => document.getElementById(id);
   const STORAGE_KEY = 'euro_tournament_results_v1';
-  const SUPABASE_CONFIG = { url:'', anonKey:'', table:'tournament_results' };
+  const SUPABASE_CONFIG = {
+  url: 'https://dkqtteoydtiamcguzqik.supabase.co',
+  anonKey: 'sb_publishable_-HrpBf1DwMVQGsYS4qCxgg_f-jDLeFb',
+  table: 'tournament_results'
+  };
   let state;
 
   function hasSupabase(){ return !!(SUPABASE_CONFIG.url && SUPABASE_CONFIG.anonKey && SUPABASE_CONFIG.table); }
